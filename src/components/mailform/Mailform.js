@@ -60,6 +60,8 @@ export default class Mailform extends Component {
         </div>
         <div>
           <button onClick={this.handleSubmit.bind(this)}>Send Message</button>
+          <input type='submit' value='Send Message' />
+        {/* NOTE: button with submithandler does not enforce required field; input however does (though not if using submit handler => look into handling required fields ) */}
         </div>
       </form>
     )
