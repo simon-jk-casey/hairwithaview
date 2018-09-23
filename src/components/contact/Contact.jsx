@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import Mailform from '../mailform/Mailform'
+
 export default class Contact extends Component {
   render () {
     return (
@@ -11,7 +13,7 @@ export default class Contact extends Component {
           <p>For enquiries and appointments please get in touch with Alana.</p>
         </div>
         <div>
-          <p>mailform placeholding</p>
+          <Mailform />
         </div>
         <div>
           <p>Alternatively text Alana on</p>
