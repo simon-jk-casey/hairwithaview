@@ -10,7 +10,10 @@ export default class Banner extends Component {
           <button>Services</button>
         </div>
         <div id='navMid'>
-          <img src={require('../../assets/images/hwav_logo.jpg')} />
+          <img
+            src={require('../../assets/images/hwav_logo.jpg')}
+            alt='Hair With a View - Brooklyn, Wellington logo'
+          />
         </div>
         <div id='navRight'>
           <button>Testimonials</button>

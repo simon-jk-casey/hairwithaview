@@ -4,6 +4,7 @@ import Banner from './components/banner/Banner'
 import Testimonials from './components/testimonials/Testimonials'
 import Services from './components/services/Services'
 import Contact from './components/contact/Contact'
+import Gallery from './components/gallery/Gallery'
 
 import './App.css'
 
@@ -13,8 +14,9 @@ class App extends Component {
       <div className='App'>
         {/* <Banner /> */}
         {/* <Testimonials /> */}
-        <Services />
-        <Contact />
+        {/* <Services />
+        <Contact /> */}
+        <Gallery />
       </div>
     )
   }
