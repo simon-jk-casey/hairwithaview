@@ -10,7 +10,8 @@ export default class Contact extends Component {
         require('../../assets/images/gallery_images/style2.jpg'),
         require('../../assets/images/gallery_images/style3.jpg'),
         require('../../assets/images/gallery_images/style4.jpg'),
-        require('../../assets/images/gallery_images/style5.jpg'),
+        require('../../assets/images/gallery_images/style5.jpg')
+        //change these to insta links?
       ],
       imgAlt: [
         'style1', 'style2', 'style3', 'style4', 'style5'
@@ -36,7 +37,7 @@ export default class Contact extends Component {
 
   render () {
     return (
-      <div classname='galleryWrapper'>
+      <div className='galleryWrapper'>
         <button
           className='buttonLeft'
           onClick={this.prevImg.bind(this)}

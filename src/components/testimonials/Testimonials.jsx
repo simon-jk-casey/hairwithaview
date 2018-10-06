@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './Testimonials.css'
+
 export default class Testimonials extends Component {
   constructor (props) {
     super(props)
@@ -12,7 +14,7 @@ export default class Testimonials extends Component {
         },
         {
           name: 'Arya Stark',
-          feedback: 'Proin sapien urna, pellentesque eu volutpat id, ultricies sed risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce elementum eu mi in suscipit. Pellentesque mollis eu leo non commodo. Fusce mollis nisl ipsum, ut commodo ligula auctor vel. Sed sed mauris sit amet sem eleifend porta. Phasellus gravida tellus purus, eget luctus nunc malesuada sed.'
+          feedback: 'Proin sapien urna, pellentesque eu volutpat id, ultricies sed risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce elementum eu mi in suscipit. Pellentesque mollis eu leo non commodo. Fusce mollis nisl ipsum, ut commodo ligula auctor vel. Sed sed mauris sit amet sem eleifend porta.'
         },
         {
           name: 'Melania Trump',
@@ -40,17 +42,19 @@ export default class Testimonials extends Component {
 
   render () {
     return (
-      <div>
-        <h1>Testimonials</h1>
-        <div>
-          <button onClick={this.prevTest.bind(this)}>back</button>
-        </div>
-        <div>
-          <p>{this.state.testimonials[this.state.index].feedback}</p>
-          <p>{this.state.testimonials[this.state.index].name}</p>
-        </div>
-        <div>
-          <button onClick={this.nextTest.bind(this)}>fwd</button>
+      <div className='bodyComponent'>
+        <h2>testimonials</h2>
+        <div className='testimonialContainer'>
+          <div className='testButtonContainer'>
+            <button onClick={this.prevTest.bind(this)}>back</button>
+          </div>
+          <div className='testimonialPane'>
+            <p>{this.state.testimonials[this.state.index].feedback}</p>
+            <p>{this.state.testimonials[this.state.index].name}</p>
+          </div>
+          <div className='testButtonContainer'>
+            <button onClick={this.nextTest.bind(this)}>fwd</button>
+          </div>
         </div>
       </div>
     )

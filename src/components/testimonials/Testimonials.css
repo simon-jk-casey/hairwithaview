@@ -1,0 +1,16 @@
+.testimonialContainer {
+  height: 8em;
+  display: flex;
+  flex-direction: row;
+}
+
+.testimonialPane {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.testButtonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

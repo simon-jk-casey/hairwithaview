@@ -7,7 +7,7 @@ export default class Contact extends Component {
     return (
       <div id='contactWrapper'>
         <div>
-          <h1>Contact</h1>
+          <h2>contact</h2>
         </div>
         <div>
           <p>For enquiries and appointments please get in touch with Alana.</p>
