@@ -48,7 +48,6 @@ export default class SalonScroller extends Component {
     } else {
       this.setState({index: this.state.index + 1})
     }
-    console.log(this.state.index)
   }
 
   componentDidMount () {
