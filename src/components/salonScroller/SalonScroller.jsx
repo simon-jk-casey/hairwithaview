@@ -42,6 +42,19 @@ export default class SalonScroller extends Component {
     }
   }
 
+  cycleIndex () {
+    if (this.state.index === this.state.images.length - 1) {
+      this.setState({index: 0})
+    } else {
+      this.setState({index: this.state.index + 1})
+    }
+    console.log(this.state.index)
+  }
+
+  componentDidMount () {
+    setInterval(this.cycleIndex.bind(this), 3000)
+  }
+
   render () {
     return (
       <div className='salonWrapper'>
