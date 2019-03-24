@@ -9,6 +9,7 @@ import Contact from './components/contact/Contact'
 import Gallery from './components/gallery/Gallery'
 import Footer from './components/footer/Footer'
 import MenuBar from './components/menu/MenuBar'
+import SalonScroller from './components/salonScroller/SalonScroller'
 
 import './App.css'
 
@@ -24,6 +25,7 @@ class App extends Component {
           anchorD='#testimonial'
           anchorE='#contact'
         />
+        <SalonScroller />
         <ScrollableAnchor id={'philosophy'}>
           <Philosophy />
         </ScrollableAnchor>
