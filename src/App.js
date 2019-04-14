@@ -21,19 +21,18 @@ class App extends Component {
         <MenuBar
           anchorA='#philosophy'
           anchorB='#services'
-          anchorC='#gallery'
-          anchorD='#testimonial'
-          anchorE='#contact'
+          anchorC='#testimonial'
+          anchorD='#contact'
         />
         <SalonScroller />
         <ScrollableAnchor id={'philosophy'}>
-          <Philosophy />
+          <div className='philGall'>
+            <Philosophy />
+            <Gallery />
+          </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'services'}>
           <Services />
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'gallery'}>
-          <Gallery />
         </ScrollableAnchor>
         <ScrollableAnchor id={'testimonial'}>
           <Testimonials />
