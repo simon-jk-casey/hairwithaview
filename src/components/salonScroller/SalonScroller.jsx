@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './salonScroller.css'
+
 export default class SalonScroller extends Component {
   constructor (props) {
     super(props)
@@ -58,6 +60,7 @@ export default class SalonScroller extends Component {
     return (
       <div className='salonWrapper'>
         <img
+          className='salonImg'
           src={this.state.images[this.state.index].img}
           alt={this.state.images[this.state.index].alt}
         />
