@@ -17,10 +17,10 @@ export default class MenuBar extends Component {
         </a>
         <a
           className='menuButton'
-          href={this.props.anchorB}
+          href={this.props.anchorA}
         >
           <p className='buttonLabel'>
-            Services
+            Gallery
           </p>
         </a>
         <a
@@ -28,7 +28,7 @@ export default class MenuBar extends Component {
           href={this.props.anchorB}
         >
           <p className='buttonLabel'>
-            Gallery
+            Services
           </p>
         </a>
         <a

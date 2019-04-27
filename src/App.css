@@ -33,7 +33,10 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
+
+
 
 .galleryWrapper {
   width: 40%;
