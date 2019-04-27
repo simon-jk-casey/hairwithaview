@@ -5,6 +5,8 @@ import './MenuBar.css'
 
 export default class MenuBar extends Component {
   render () {
+    const fbookLogo = require('../../assets/images/social_icons/fbook.png')
+    const igramLogo = require('../../assets/images/social_icons/igram.png')
     return (
       <div className='menu'>
         <a
@@ -53,14 +55,14 @@ export default class MenuBar extends Component {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img src='' alt='Instagram' />
+            <img className='igramLogo' src={igramLogo} alt='Instagram' />              
           </a>
           <a
             href='https://www.facebook.com/hairwav/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img src='' alt='Facebook' />
+            <img className='fbookLogo' src={fbookLogo} alt='Facebook' />
           </a>
         </div>
       </div>

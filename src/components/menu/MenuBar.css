@@ -8,7 +8,13 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.9)
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.buttonLabel {
+  font-family: 'sonder_script_3regular';
+  font-size: 2.25em;
+  letter-spacing: 1px;
 }
 
 .socialsSub {
@@ -20,4 +26,14 @@
 
 a {
   text-decoration: none;
+}
+
+.igramLogo {
+  width: 58px;
+  background-color: rgb(247, 156, 171);
+  margin-right: 14.5px;
+}
+
+.fbookLogo {
+  margin-left: 14.5px;
 }
