@@ -17,6 +17,14 @@ export default class MenuBar extends Component {
         </a>
         <a
           className='menuButton'
+          href={this.props.anchorA}
+        >
+          <p className='buttonLabel'>
+            Gallery
+          </p>
+        </a>
+        <a
+          className='menuButton'
           href={this.props.anchorB}
         >
           <p className='buttonLabel'>
@@ -28,20 +36,12 @@ export default class MenuBar extends Component {
           href={this.props.anchorC}
         >
           <p className='buttonLabel'>
-            Gallery
-          </p>
-        </a>
-        <a
-          className='menuButton'
-          href={this.props.anchorD}
-        >
-          <p className='buttonLabel'>
             Testimonials
           </p>
         </a>
         <a
           className='menuButton'
-          href={this.props.anchorE}
+          href={this.props.anchorD}
         >
           <p className='buttonLabel'>
             Contact

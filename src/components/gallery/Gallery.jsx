@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './Gallery.css'
+
 export default class Gallery extends Component {
   constructor (props) {
     super(props)
@@ -57,6 +59,7 @@ export default class Gallery extends Component {
           &lt;
         </button>
         <img
+          className='galleryImg'
           src={this.state.images[this.state.index].img} alt={this.state.images[this.state.index].alt}
         />
         <button
