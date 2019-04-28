@@ -10,6 +10,7 @@ import Gallery from './components/gallery/Gallery'
 import Footer from './components/footer/Footer'
 import MenuBar from './components/menu/MenuBar'
 import SalonScroller from './components/salonScroller/SalonScroller'
+import Location from './components/location/Location'
 
 import './App.css'
 
@@ -20,26 +21,37 @@ class App extends Component {
         <Banner />
         <MenuBar
           anchorA='#philosophy'
-          anchorB='#services'
-          anchorC='#testimonial'
-          anchorD='#contact'
+          anchorB='#gallery'
+          anchorC='#services'
+          anchorD='#testimonials'
+          anchorE='#location'
+          anchorF='#contact'
         />
         <SalonScroller />
-        <ScrollableAnchor id={'philosophy'}>
-          <div className='philGall'>
+        <div className='pageDiv'>
+          <ScrollableAnchor id={'philosophy'}>
             <Philosophy />
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'gallery'}>
             <Gallery />
-          </div>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'services'}>
-          <Services />
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'testimonial'}>
-          <Testimonials />
+          </ScrollableAnchor>
+        </div>
+        <div className='pageDiv'>
+          <ScrollableAnchor id={'services'}>
+            <Services />
+          </ScrollableAnchor>
+          <ScrollableAnchor id={'testimonials'}>
+            <Testimonials />
+          </ScrollableAnchor>
+        </div>
+        <div className='pageDiv'>
+        <ScrollableAnchor id={'location'}>
+          <Location />
         </ScrollableAnchor>
         <ScrollableAnchor id={'contact'}>
           <Contact />
         </ScrollableAnchor>
+        </div>
         <Footer />
       </div>
     )

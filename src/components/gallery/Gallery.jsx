@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import './Gallery.css'
 
 export default class Gallery extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       index: 0,
@@ -33,23 +33,23 @@ export default class Gallery extends Component {
     }
   }
 
-  prevImg () {
+  prevImg() {
     if (this.state.index === 0) {
-      this.setState({index: this.state.images.length - 1})
+      this.setState({ index: this.state.images.length - 1 })
     } else {
-      this.setState({index: this.state.index - 1})
+      this.setState({ index: this.state.index - 1 })
     }
   }
 
-  nextImg () {
+  nextImg() {
     if (this.state.index === this.state.images.length - 1) {
-      this.setState({index: 0})
+      this.setState({ index: 0 })
     } else {
-      this.setState({index: this.state.index + 1})
+      this.setState({ index: this.state.index + 1 })
     }
   }
 
-  render () {
+  render() {
     return (
       <div className='galleryWrapper'>
         <button

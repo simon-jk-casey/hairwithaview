@@ -19,7 +19,7 @@ export default class MenuBar extends Component {
         </a>
         <a
           className='menuButton'
-          href={this.props.anchorA}
+          href={this.props.anchorB}
         >
           <p className='buttonLabel'>
             Gallery
@@ -27,7 +27,7 @@ export default class MenuBar extends Component {
         </a>
         <a
           className='menuButton'
-          href={this.props.anchorB}
+          href={this.props.anchorC}
         >
           <p className='buttonLabel'>
             Services
@@ -35,7 +35,7 @@ export default class MenuBar extends Component {
         </a>
         <a
           className='menuButton'
-          href={this.props.anchorC}
+          href={this.props.anchorD}
         >
           <p className='buttonLabel'>
             Testimonials
@@ -43,7 +43,15 @@ export default class MenuBar extends Component {
         </a>
         <a
           className='menuButton'
-          href={this.props.anchorD}
+          href={this.props.anchorE}
+        >
+          <p className='buttonLabel'>
+            Location
+          </p>
+        </a>
+        <a
+          className='menuButton'
+          href={this.props.anchorF}
         >
           <p className='buttonLabel'>
             Contact
@@ -75,5 +83,6 @@ MenuBar.propTypes = {
   anchorB: PropTypes.string.isRequired,
   anchorC: PropTypes.string.isRequired,
   anchorD: PropTypes.string.isRequired,
-  anchorE: PropTypes.string.isRequired
+  anchorE: PropTypes.string.isRequired,
+  anchorF: PropTypes.string.isRequired
 }
