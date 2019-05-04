@@ -21,9 +21,15 @@ h2 {
   font-family: 'sonder_script_3regular';
   font-size: 4em;
   letter-spacing: 2px;
+  padding-bottom: 0.025em;
 }
 
 p {
   font-family: 'aileronthin';
   font-size: 1.5em;
+}
+
+.content {
+  padding-top: 5em;
+  padding-bottom: 1em;
 }

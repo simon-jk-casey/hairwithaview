@@ -25,21 +25,33 @@ class App extends Component {
           anchorD='#location'
           anchorE='#contact'
         />
-        <SalonScroller />
+        <div className='content'>
+          <SalonScroller />
+        </div>
         <ScrollableAnchor id={'about'}>
+        <div className='content'>
           <About />
+        </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'gallery'}>
-          <Gallery />
+          <div className='content'>
+           <Gallery />          
+          </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'testimonials'}>
-          <Testimonials />
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'location'}>
-          <Location />
+          <div className='content'>
+            <Testimonials />
+          </div>
         </ScrollableAnchor>
         <ScrollableAnchor id={'contact'}>
-          <Contact />
+          <div className='content'>
+            <Contact />
+          </div>
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'location'}>
+          <div className='content'>
+            <Location />
+          </div>
         </ScrollableAnchor>
         <Footer />
       </div>
