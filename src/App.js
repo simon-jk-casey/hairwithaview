@@ -3,8 +3,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Banner from './components/banner/Banner'
 import Testimonials from './components/testimonials/Testimonials'
-import Philosophy from './components/philosophy/Philosophy'
-import Services from './components/services/Services'
+import About from './components/about/About'
 import Contact from './components/contact/Contact'
 import Gallery from './components/gallery/Gallery'
 import Footer from './components/footer/Footer'
@@ -20,38 +19,28 @@ class App extends Component {
       <div className='App'>
         <Banner />
         <MenuBar
-          anchorA='#philosophy'
+          anchorA='#about'
           anchorB='#gallery'
-          anchorC='#services'
-          anchorD='#testimonials'
-          anchorE='#location'
-          anchorF='#contact'
+          anchorC='#testimonials'
+          anchorD='#location'
+          anchorE='#contact'
         />
         <SalonScroller />
-        <div className='pageDiv'>
-          <ScrollableAnchor id={'philosophy'}>
-            <Philosophy />
-          </ScrollableAnchor>
-          <ScrollableAnchor id={'gallery'}>
-            <Gallery />
-          </ScrollableAnchor>
-        </div>
-        <div className='pageDiv'>
-          <ScrollableAnchor id={'services'}>
-            <Services />
-          </ScrollableAnchor>
-          <ScrollableAnchor id={'testimonials'}>
-            <Testimonials />
-          </ScrollableAnchor>
-        </div>
-        <div className='pageDiv'>
+        <ScrollableAnchor id={'about'}>
+          <About />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'gallery'}>
+          <Gallery />
+        </ScrollableAnchor>
+        <ScrollableAnchor id={'testimonials'}>
+          <Testimonials />
+        </ScrollableAnchor>
         <ScrollableAnchor id={'location'}>
           <Location />
         </ScrollableAnchor>
         <ScrollableAnchor id={'contact'}>
           <Contact />
         </ScrollableAnchor>
-        </div>
         <Footer />
       </div>
     )

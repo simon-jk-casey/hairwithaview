@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import './MenuBar.css'
+import priceList from '../../assets/other/hwav_pricelist.pdf'
+import fbookLogo from '../../assets/images/social_icons/fbook.png'
+import igramLogo from '../../assets/images/social_icons/igram.png'
 
 export default class MenuBar extends Component {
   render () {
-    const fbookLogo = require('../../assets/images/social_icons/fbook.png')
-    const igramLogo = require('../../assets/images/social_icons/igram.png')
     return (
       <div className='menu'>
         <a
@@ -14,7 +15,7 @@ export default class MenuBar extends Component {
           href={this.props.anchorA}
         >
           <p className='buttonLabel'>
-            Philosophy
+            About Us
           </p>
         </a>
         <a
@@ -30,6 +31,14 @@ export default class MenuBar extends Component {
           href={this.props.anchorC}
         >
           <p className='buttonLabel'>
+            Testimonials
+          </p>
+        </a>
+        <a
+          className='menuButton'
+          href={priceList} target='_blank' rel='noopener noreferrer'
+        >
+          <p className='buttonLabel'>
             Services
           </p>
         </a>
@@ -38,20 +47,12 @@ export default class MenuBar extends Component {
           href={this.props.anchorD}
         >
           <p className='buttonLabel'>
-            Testimonials
-          </p>
-        </a>
-        <a
-          className='menuButton'
-          href={this.props.anchorE}
-        >
-          <p className='buttonLabel'>
             Location
           </p>
         </a>
         <a
           className='menuButton'
-          href={this.props.anchorF}
+          href={this.props.anchorE}
         >
           <p className='buttonLabel'>
             Contact
@@ -83,6 +84,5 @@ MenuBar.propTypes = {
   anchorB: PropTypes.string.isRequired,
   anchorC: PropTypes.string.isRequired,
   anchorD: PropTypes.string.isRequired,
-  anchorE: PropTypes.string.isRequired,
-  anchorF: PropTypes.string.isRequired
+  anchorE: PropTypes.string.isRequired
 }

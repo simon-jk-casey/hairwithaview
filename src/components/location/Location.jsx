@@ -4,8 +4,6 @@ import './Location.css'
 
 export default class Location extends Component {
   render () {
-    const map = require('../../assets/images/map/mapCapture.PNG')
-    const gMaps = require('../../assets/images/social_icons/gmaps.png')
     return (
       <div className='locationWrapper'>
         <h2>location</h2>

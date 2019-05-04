@@ -28,7 +28,6 @@ export default class Gallery extends Component {
           img: require('../../assets/images/gallery_images/style5.jpg'),
           alt: 'style5'
         }
-        // NEED TO CHANGE ALT TEXT TO MORE DESCRIPTIVE FOR SEO
       ]
     }
   }
@@ -51,23 +50,32 @@ export default class Gallery extends Component {
 
   render() {
     return (
+      <div>
+      <h2>Gallery</h2>
       <div className='galleryWrapper'>
-        <button
-          className='buttonLeft'
-          onClick={this.prevImg.bind(this)}
-        >
-          &lt;
-        </button>
-        <img
-          className='galleryImg'
-          src={this.state.images[this.state.index].img} alt={this.state.images[this.state.index].alt}
-        />
+        <div>
+          <button
+            className='buttonLeft'
+            onClick={this.prevImg.bind(this)}
+          >
+            &lt;
+          </button>
+        </div>
+        <div>
+          <img
+            className='galleryImg'
+            src={this.state.images[this.state.index].img} alt={this.state.images[this.state.index].alt}
+          />
+        </div>
+        <div>
         <button
           className='buttonRight'
           onClick={this.nextImg.bind(this)}
         >
           &gt;
         </button>
+        </div>
+      </div>
       </div>
     )
   }
