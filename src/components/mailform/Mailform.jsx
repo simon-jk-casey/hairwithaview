@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
+import './Mailform.css'
+
 class Sending extends Component {
   render () {
     return (
@@ -107,30 +109,30 @@ export default class Mailform extends Component {
     } else {
       return (
         <form onSubmit={this.handleSubmit}>
-          <div>
-            <label htmlFor='nameField'>Name</label>
+          <div className='fieldContainer'>
             <input
               type='text'
               name='name'
+              placeholder='Name'
               onChange={this.handleChange}
               required
             />
           </div>
-          <div>
-            <label htmlFor='email'> Email</label>
+          <div className='fieldContainer'>
             <input
               type='email'
               name='email'
+              placeholder='Email Address'
               onChange={this.handleChange}
               required
             />
           </div>
-          <div>
-            <label htmlFor='message'> Message</label>
+          <div className='fieldContainer'>
             <textarea
               rows='10'
               cols='50'
               name='message'
+              placeholder='Message'
               onChange={this.handleChange}
               required
             />
