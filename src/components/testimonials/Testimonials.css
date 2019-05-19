@@ -2,15 +2,21 @@
   height: 8em;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonialPane {
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 70%
 }
 
-.testButtonContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.testButtonContainerLeft {
+  text-align: center;
+  width: 15%;
 }
+
+.testButtonContainerRight {
+  text-align: center;
+  width: 15%;
+}
+

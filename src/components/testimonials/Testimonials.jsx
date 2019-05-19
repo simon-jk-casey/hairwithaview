@@ -25,10 +25,6 @@ export default class Testimonials extends Component {
           feedback: '5 stars.  Alana did such an amazing job on my hair and the whole experience was so relaxing.'
         },
         {
-          name: 'Lissa',
-          feedback: 'After several horrible and overpriced cuts since moving to New Zealand, I discovered Hair With a View.  Alana has listened to my hair woes more than once.  She gives her expert advice on not only what would look best, but what will keep my hair healthy.  The relaxed environment and easy conversation, along with affordable prices, is what will make this salon a huge success in Wellington.  Alana cares about your experience.  I am so happy to have found this gem of a salon and am only sorry I didn\'t find it sooner!'
-        },
-        {
           name: 'Emily',
           feedback: 'Eight years of fantastic cuts, colour and service.  Thanks Alana!'
         }
@@ -55,16 +51,16 @@ export default class Testimonials extends Component {
   render () {
     return (
       <div className='bodyComponent'>
-        <h2>testimonials</h2>
+        <h2>Testimonials</h2>
         <div className='testimonialContainer'>
-          <div className='testButtonContainer'>
+          <div className='testButtonContainerLeft'>
             <button onClick={this.prevTest.bind(this)}>back</button>
           </div>
           <div className='testimonialPane'>
             <p>{this.state.testimonials[this.state.index].feedback}</p>
-            <p>{this.state.testimonials[this.state.index].name}</p>
+            <p> - {this.state.testimonials[this.state.index].name}</p>
           </div>
-          <div className='testButtonContainer'>
+          <div className='testButtonContainerRight'>
             <button onClick={this.nextTest.bind(this)}>fwd</button>
           </div>
         </div>
