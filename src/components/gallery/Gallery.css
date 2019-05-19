@@ -1,5 +1,8 @@
 .galleryImg {
-  width: 75%;
+}
+
+.galleryImgWrapper {
+  width: 60%;
 }
 
 .galleryWrapper {
@@ -7,4 +10,18 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.buttonWrapperLeft {
+  width: 20%;
+  text-align: right;
+}
+
+.buttonWrapperRight {
+  width: 20%;
+  text-align: left;
+}
+
+.galleryButtonL {
+  margin-left: 100%;
 }

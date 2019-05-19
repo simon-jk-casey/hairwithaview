@@ -81,23 +81,21 @@ export default class Gallery extends Component {
       <div>
       <h2>Gallery</h2>
       <div className='galleryWrapper'>
-        <div>
+        <div className='buttonWrapperLeft'>
           <button
-            className='buttonLeft'
             onClick={this.prevImg.bind(this)}
           >
             &lt;
           </button>
         </div>
-        <div>
+        <div className='galleryImgWrapper'>
           <img
             className='galleryImg'
             src={this.state.images[this.state.index].img} alt={this.state.images[this.state.index].alt}
           />
         </div>
-        <div>
+        <div className='buttonWrapperRight'>
         <button
-          className='buttonRight'
           onClick={this.nextImg.bind(this)}
         >
           &gt;
