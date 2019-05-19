@@ -2,7 +2,9 @@
 }
 
 .galleryImgWrapper {
-  width: 60%;
+  width: 70%;
+  margin-left: -5%;
+  margin-right: -5%;
 }
 
 .galleryWrapper {
@@ -13,15 +15,11 @@
 }
 
 .buttonWrapperLeft {
-  width: 20%;
+  width: 15%;
   text-align: right;
 }
 
 .buttonWrapperRight {
-  width: 20%;
+  width: 15%;
   text-align: left;
-}
-
-.galleryButtonL {
-  margin-left: 100%;
 }
