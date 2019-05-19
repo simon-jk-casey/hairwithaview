@@ -9,16 +9,28 @@ export default class Testimonials extends Component {
       index: 0,
       testimonials: [
         {
-          name: 'Gregor Clegane',
-          feedback: 'In a pulvinar turpis. Mauris rhoncus malesuada purus et fermentum. Cras sed commodo lectus. Quisque eget nisi interdum, interdum neque at, blandit ipsum. Proin eu massa at libero venenatis sagittis. Suspendisse malesuada sapien dolor, a fermentum mi iaculis sit amet. Aenean molestie nunc eget sem mollis mattis.'
+          name: 'Michelle',
+          feedback: 'Alana is the only hairdresser who has ever been able to tame my crazy frizzy hair.  Love my visits and chats with Alana'
         },
         {
-          name: 'Arya Stark',
-          feedback: 'Proin sapien urna, pellentesque eu volutpat id, ultricies sed risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce elementum eu mi in suscipit. Pellentesque mollis eu leo non commodo. Fusce mollis nisl ipsum, ut commodo ligula auctor vel. Sed sed mauris sit amet sem eleifend porta.'
+          name: 'Francine',
+          feedback: 'Love love love visiting Alana.  She knows how to cut and colour my hair beautifully.  She is honest about whether a style or colour would suit you and offers alternatives.  She is awesome at blonde colour also.  Highly recommended.'
         },
         {
-          name: 'Melania Trump',
-          feedback: 'Praesent condimentum, nisl quis tincidunt pellentesque, neque est mattis nibh, vulputate fermentum diam enim quis est. Vivamus in tortor eget nulla lacinia gravida eget quis nulla. Donec efficitur congue nisi quis condimentum. Duis pellentesque ullamcorper ipsum, in interdum lorem accumsan in. Mauris gravida sit amet leo non lacinia.'
+          name: 'Lauren',
+          feedback: 'Alana has such a passion for what she does.  Visiting her is always a wonderful experience and leaves me feeling fabulous when I leave!'
+        },
+        {
+          name: 'Katie',
+          feedback: '5 stars.  Alana did such an amazing job on my hair and the whole experience was so relaxing.'
+        },
+        {
+          name: 'Lissa',
+          feedback: 'After several horrible and overpriced cuts since moving to New Zealand, I discovered Hair With a View.  Alana has listened to my hair woes more than once.  She gives her expert advice on not only what would look best, but what will keep my hair healthy.  The relaxed environment and easy conversation, along with affordable prices, is what will make this salon a huge success in Wellington.  Alana cares about your experience.  I am so happy to have found this gem of a salon and am only sorry I didn\'t find it sooner!'
+        },
+        {
+          name: 'Emily',
+          feedback: 'Eight years of fantastic cuts, colour and service.  Thanks Alana!'
         }
       ]
     }

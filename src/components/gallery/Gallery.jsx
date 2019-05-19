@@ -9,24 +9,52 @@ export default class Gallery extends Component {
       index: 0,
       images: [
         {
-          img: require('../../assets/images/gallery_images/style1.jpg'),
+          img: require('../../assets/images/gallery_images/style_1.jpg'),
           alt: 'style1'
         },
         {
-          img: require('../../assets/images/gallery_images/style2.jpg'),
+          img: require('../../assets/images/gallery_images/style_2.jpg'),
           alt: 'style2'
         },
         {
-          img: require('../../assets/images/gallery_images/style3.jpg'),
+          img: require('../../assets/images/gallery_images/style_3.jpg'),
           alt: 'style3'
         },
         {
-          img: require('../../assets/images/gallery_images/style4.jpg'),
+          img: require('../../assets/images/gallery_images/style_4.jpg'),
           alt: 'style4'
         },
         {
-          img: require('../../assets/images/gallery_images/style5.jpg'),
+          img: require('../../assets/images/gallery_images/style_5.jpg'),
           alt: 'style5'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_6.jpg'),
+          alt: 'style6'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_7.jpg'),
+          alt: 'style7'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_8.jpg'),
+          alt: 'style8'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_9.jpg'),
+          alt: 'style9'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_10.jpg'),
+          alt: 'style10'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_11.jpg'),
+          alt: 'style11'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_12.jpg'),
+          alt: 'style12'
         }
       ]
     }

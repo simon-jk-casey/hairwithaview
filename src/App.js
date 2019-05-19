@@ -28,31 +28,37 @@ class App extends Component {
         <div className='content'>
           <SalonScroller />
         </div>
-        <ScrollableAnchor id={'about'}>
-        <div className='content'>
-          <About />
+        <div className='mainBodyWrapper'>
+          <div className='sideSpacer'/>
+          <div className='mainBodyContent'>
+            <ScrollableAnchor id={'about'}>
+            <div className='content'>
+              <About />
+            </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'gallery'}>
+              <div className='content'>
+              <Gallery />          
+              </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'testimonials'}>
+              <div className='content'>
+                <Testimonials />
+              </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'contact'}>
+              <div className='content'>
+                <Contact />
+              </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'location'}>
+              <div className='content'>
+                <Location />
+              </div>
+            </ScrollableAnchor>
+          </div>
+          <div className='sideSpacer'/>
         </div>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'gallery'}>
-          <div className='content'>
-           <Gallery />          
-          </div>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'testimonials'}>
-          <div className='content'>
-            <Testimonials />
-          </div>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'contact'}>
-          <div className='content'>
-            <Contact />
-          </div>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'location'}>
-          <div className='content'>
-            <Location />
-          </div>
-        </ScrollableAnchor>
         <Footer />
       </div>
     )
