@@ -3,71 +3,105 @@ import React, { Component } from 'react'
 import './Gallery.css'
 
 export default class Gallery extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = {
       index: 0,
       images: [
         {
-          img: require('../../assets/images/gallery_images/style1.jpg'),
+          img: require('../../assets/images/gallery_images/style_1.jpg'),
           alt: 'style1'
         },
         {
-          img: require('../../assets/images/gallery_images/style2.jpg'),
+          img: require('../../assets/images/gallery_images/style_2.jpg'),
           alt: 'style2'
         },
         {
-          img: require('../../assets/images/gallery_images/style3.jpg'),
+          img: require('../../assets/images/gallery_images/style_3.jpg'),
           alt: 'style3'
         },
         {
-          img: require('../../assets/images/gallery_images/style4.jpg'),
+          img: require('../../assets/images/gallery_images/style_4.jpg'),
           alt: 'style4'
         },
         {
-          img: require('../../assets/images/gallery_images/style5.jpg'),
+          img: require('../../assets/images/gallery_images/style_5.jpg'),
           alt: 'style5'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_6.jpg'),
+          alt: 'style6'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_7.jpg'),
+          alt: 'style7'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_8.jpg'),
+          alt: 'style8'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_9.jpg'),
+          alt: 'style9'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_10.jpg'),
+          alt: 'style10'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_11.jpg'),
+          alt: 'style11'
+        },
+        {
+          img: require('../../assets/images/gallery_images/style_12.jpg'),
+          alt: 'style12'
         }
-        // NEED TO CHANGE ALT TEXT TO MORE DESCRIPTIVE FOR SEO
       ]
     }
   }
 
-  prevImg () {
+  prevImg() {
     if (this.state.index === 0) {
-      this.setState({index: this.state.images.length - 1})
+      this.setState({ index: this.state.images.length - 1 })
     } else {
-      this.setState({index: this.state.index - 1})
+      this.setState({ index: this.state.index - 1 })
     }
   }
 
-  nextImg () {
+  nextImg() {
     if (this.state.index === this.state.images.length - 1) {
-      this.setState({index: 0})
+      this.setState({ index: 0 })
     } else {
-      this.setState({index: this.state.index + 1})
+      this.setState({ index: this.state.index + 1 })
     }
   }
 
-  render () {
+  render() {
     return (
+      <div>
+      <h2>Gallery</h2>
       <div className='galleryWrapper'>
+        <div className='buttonWrapperLeft'>
+          <button
+            onClick={this.prevImg.bind(this)}
+          >
+            &lt;
+          </button>
+        </div>
+        <div className='galleryImgWrapper'>
+          <img
+            className='galleryImg'
+            src={this.state.images[this.state.index].img} alt={this.state.images[this.state.index].alt}
+          />
+        </div>
+        <div className='buttonWrapperRight'>
         <button
-          className='buttonLeft'
-          onClick={this.prevImg.bind(this)}
-        >
-          &lt;
-        </button>
-        <img
-          className='galleryImg'
-          src={this.state.images[this.state.index].img} alt={this.state.images[this.state.index].alt}
-        />
-        <button
-          className='buttonRight'
           onClick={this.nextImg.bind(this)}
         >
           &gt;
         </button>
+        </div>
+      </div>
       </div>
     )
   }

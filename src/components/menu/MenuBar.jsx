@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import './MenuBar.css'
+import priceList from '../../assets/other/hwav_pricelist.pdf'
+import fbookLogo from '../../assets/images/social_icons/fbook.png'
+import igramLogo from '../../assets/images/social_icons/igram.png'
 
 export default class MenuBar extends Component {
   render () {
-    const fbookLogo = require('../../assets/images/social_icons/fbook.png')
-    const igramLogo = require('../../assets/images/social_icons/igram.png')
     return (
       <div className='menu'>
         <a
@@ -14,15 +15,7 @@ export default class MenuBar extends Component {
           href={this.props.anchorA}
         >
           <p className='buttonLabel'>
-            Philosophy
-          </p>
-        </a>
-        <a
-          className='menuButton'
-          href={this.props.anchorA}
-        >
-          <p className='buttonLabel'>
-            Gallery
+            About Us
           </p>
         </a>
         <a
@@ -30,7 +23,7 @@ export default class MenuBar extends Component {
           href={this.props.anchorB}
         >
           <p className='buttonLabel'>
-            Services
+            Gallery
           </p>
         </a>
         <a
@@ -43,10 +36,26 @@ export default class MenuBar extends Component {
         </a>
         <a
           className='menuButton'
+          href={priceList} target='_blank' rel='noopener noreferrer'
+        >
+          <p className='buttonLabel'>
+            Services
+          </p>
+        </a>
+        <a
+          className='menuButton'
           href={this.props.anchorD}
         >
           <p className='buttonLabel'>
             Contact
+          </p>
+        </a>
+        <a
+          className='menuButton'
+          href={this.props.anchorE}
+        >
+          <p className='buttonLabel'>
+            Location
           </p>
         </a>
         <div className='socialsSub'>

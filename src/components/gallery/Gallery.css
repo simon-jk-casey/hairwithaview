@@ -1,3 +1,25 @@
 .galleryImg {
-  width: 75%;
+}
+
+.galleryImgWrapper {
+  width: 70%;
+  margin-left: -5%;
+  margin-right: -5%;
+}
+
+.galleryWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonWrapperLeft {
+  width: 15%;
+  text-align: right;
+}
+
+.buttonWrapperRight {
+  width: 15%;
+  text-align: left;
 }

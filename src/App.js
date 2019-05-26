@@ -3,13 +3,13 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Banner from './components/banner/Banner'
 import Testimonials from './components/testimonials/Testimonials'
-import Philosophy from './components/philosophy/Philosophy'
-import Services from './components/services/Services'
+import About from './components/about/About'
 import Contact from './components/contact/Contact'
 import Gallery from './components/gallery/Gallery'
 import Footer from './components/footer/Footer'
 import MenuBar from './components/menu/MenuBar'
 import SalonScroller from './components/salonScroller/SalonScroller'
+import Location from './components/location/Location'
 
 import './App.css'
 
@@ -19,27 +19,49 @@ class App extends Component {
       <div className='App'>
         <Banner />
         <MenuBar
-          anchorA='#philosophy'
-          anchorB='#services'
-          anchorC='#testimonial'
+          anchorA='#about'
+          anchorB='#gallery'
+          anchorC='#testimonials'
           anchorD='#contact'
+          anchorE='#location'
         />
-        <SalonScroller />
-        <ScrollableAnchor id={'philosophy'}>
-          <div className='philGall'>
-            <Philosophy />
-            <Gallery />
+        <div className='content'>
+          <SalonScroller />
+        </div>
+        <div className='mainBodyWrapper'>
+          <div className='sideSpacer'/>
+          <div className='mainBodyContent'>
+            <ScrollableAnchor id={'about'}>
+            <div className='content'>
+              <About />
+            </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'gallery'}>
+              <div className='content'>
+              <Gallery />          
+              </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'testimonials'}>
+              <div className='content'>
+                <Testimonials />
+              </div>
+            </ScrollableAnchor>
+            <ScrollableAnchor id={'contact'}>
+              <div className='content'>
+                <Contact />
+              </div>
+            </ScrollableAnchor>
+            <div>
+
+            <ScrollableAnchor id={'location'}>
+              <div className='content'>
+                <Location />
+              </div>
+            </ScrollableAnchor>
+            </div>
           </div>
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'services'}>
-          <Services />
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'testimonial'}>
-          <Testimonials />
-        </ScrollableAnchor>
-        <ScrollableAnchor id={'contact'}>
-          <Contact />
-        </ScrollableAnchor>
+          <div className='sideSpacer'/>
+        </div>
         <Footer />
       </div>
     )

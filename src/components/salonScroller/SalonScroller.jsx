@@ -9,35 +9,35 @@ export default class SalonScroller extends Component {
       index: 0,
       images: [
         {
-          img: require('../../assets/images/salon_images/salon1.jpg'),
+          img: require('../../assets/images/salon_images/salon_1.jpg'),
           alt: 'hair salon entry'
         },
         {
-          img: require('../../assets/images/salon_images/salon2.jpg'),
+          img: require('../../assets/images/salon_images/salon_2.jpg'),
           alt: 'view'
         },
         {
-          img: require('../../assets/images/salon_images/salon3.jpg'),
+          img: require('../../assets/images/salon_images/salon_3.jpg'),
           alt: 'boutique salon'
         },
         {
-          img: require('../../assets/images/salon_images/salon4.jpg'),
+          img: require('../../assets/images/salon_images/salon_4.jpg'),
           alt: 'relaxation'
         },
         {
-          img: require('../../assets/images/salon_images/salon5.jpg'),
+          img: require('../../assets/images/salon_images/salon_5.jpg'),
           alt: 'hair styling'
         },
         {
-          img: require('../../assets/images/salon_images/salon6.jpg'),
+          img: require('../../assets/images/salon_images/salon_6.jpg'),
           alt: 'hair salon'
         },
         {
-          img: require('../../assets/images/salon_images/salon7.jpg'),
+          img: require('../../assets/images/salon_images/salon_7.jpg'),
           alt: 'hair coloring colouring'
         },
         {
-          img: require('../../assets/images/salon_images/salon8.jpg'),
+          img: require('../../assets/images/salon_images/salon_8.jpg'),
           alt: 'hair salon Brooklyn Wellington'
         }
       ]

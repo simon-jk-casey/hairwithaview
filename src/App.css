@@ -21,6 +21,7 @@ h2 {
   font-family: 'sonder_script_3regular';
   font-size: 4em;
   letter-spacing: 2px;
+  padding-bottom: 0.025em;
 }
 
 p {
@@ -28,19 +29,17 @@ p {
   font-size: 1.5em;
 }
 
-.philGall {
-  margin-top: 5%;
+.content {
+  padding-top: 6em;
+  padding-bottom: 2em;
+}
+
+.mainBodyWrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
 
-.galleryWrapper {
-  width: 40%;
-}
-
-.philComponent {
-  margin-left: 2%;
-  width: 40%;
+.sideSpacer {
+  width: 10%;
 }
