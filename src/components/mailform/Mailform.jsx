@@ -110,35 +110,37 @@ export default class Mailform extends Component {
       return (
         <form onSubmit={this.handleSubmit}>
           <div className='fieldContainer'>
+            <span className='fieldLabel'>Name:</span>
             <input
               type='text'
               name='name'
-              placeholder='Name'
+              placeholder='enter your name'
               onChange={this.handleChange}
               required
             />
           </div>
           <div className='fieldContainer'>
+            <span className='fieldLabel'>Email Address:</span>
             <input
               type='email'
               name='email'
-              placeholder='Email Address'
+              placeholder='enter a valid email address'
               onChange={this.handleChange}
               required
             />
           </div>
           <div className='fieldContainer'>
+            <span className='fieldLabel'>Message:</span>
             <textarea
-              rows='10'
-              cols='50'
+              rows='5'
               name='message'
-              placeholder='Message'
+              placeholder='compose your message'
               onChange={this.handleChange}
               required
             />
           </div>
           <div>
-            <input type='submit' value='Send Message' />
+            <input className='formSubmit' type='submit' value='Send Message' />
           </div>
         </form>
       )
