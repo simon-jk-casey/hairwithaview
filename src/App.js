@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Banner from './components/banner/Banner'
 import Testimonials from './components/testimonials/Testimonials'
@@ -18,47 +17,18 @@ class App extends Component {
     return (
       <div className='App'>
         <Banner />
-        <MenuBar
-          anchorA='#about'
-          anchorB='#gallery'
-          anchorC='#testimonials'
-          anchorD='#contact'
-          anchorE='#location'
-        />
+        <MenuBar />
         <div className='content'>
           <SalonScroller />
         </div>
         <div className='mainBodyWrapper'>
           <div className='sideSpacer'/>
           <div className='mainBodyContent'>
-            <ScrollableAnchor id={'about'}>
-            <div className='content'>
-              <About />
-            </div>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={'gallery'}>
-              <div className='content'>
-              <Gallery />          
-              </div>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={'testimonials'}>
-              <div className='content'>
-                <Testimonials />
-              </div>
-            </ScrollableAnchor>
-            <ScrollableAnchor id={'contact'}>
-              <div className='content'>
-                <Contact />
-              </div>
-            </ScrollableAnchor>
-            <div>
-
-            <ScrollableAnchor id={'location'}>
-              <div className='content'>
-                <Location />
-              </div>
-            </ScrollableAnchor>
-            </div>
+            <div id='about' className='content'><About /></div>
+            <div id='gallery' className='content'><Gallery /></div>
+            <div id='testimonials' className='content'><Testimonials /></div>
+            <div id='contact' className='content'><Contact /></div>
+            <div id='location' className='content'><Location /></div>
           </div>
           <div className='sideSpacer'/>
         </div>
