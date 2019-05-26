@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -12,6 +13,13 @@
   font-family: 'sonder_script_3regular';
   font-size: 2.25em;
   letter-spacing: 1px;
+  color: #E75480;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #E75480;
 }
 
 .socialsSub {

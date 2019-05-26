@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import { Link } from 'react-scroll'
 
 import './MenuBar.css'
 import priceList from '../../assets/other/hwav_pricelist.pdf'
@@ -10,54 +10,26 @@ export default class MenuBar extends Component {
   render () {
     return (
       <div className='menu'>
-        <a
-          className='menuButton'
-          href={this.props.anchorA}
-        >
-          <p className='buttonLabel'>
-            About Us
-          </p>
-        </a>
-        <a
-          className='menuButton'
-          href={this.props.anchorB}
-        >
-          <p className='buttonLabel'>
-            Gallery
-          </p>
-        </a>
-        <a
-          className='menuButton'
-          href={this.props.anchorC}
-        >
-          <p className='buttonLabel'>
-            Testimonials
-          </p>
-        </a>
-        <a
-          className='menuButton'
-          href={priceList} target='_blank' rel='noopener noreferrer'
-        >
-          <p className='buttonLabel'>
-            Services
-          </p>
-        </a>
-        <a
-          className='menuButton'
-          href={this.props.anchorD}
-        >
-          <p className='buttonLabel'>
-            Contact
-          </p>
-        </a>
-        <a
-          className='menuButton'
-          href={this.props.anchorE}
-        >
-          <p className='buttonLabel'>
-            Location
-          </p>
-        </a>
+        <div className='buttonLabel'>
+            <Link to='about' smooth={true}>About Us</Link>
+        </div>
+        <div className='buttonLabel'>
+            <Link to='gallery' smooth={true}>Gallery</Link>
+        </div>
+        <div className='buttonLabel'>
+            <Link to='testimonials' smooth={true}>Testimonials</Link>
+        </div>
+        <div className='buttonLabel'>
+            <a id='menuAnchor' href={priceList} target='_blank' rel='noopener noreferrer'>
+              <span> Services </span>
+            </a>
+        </div>
+        <div className='buttonLabel'>
+            <Link to='contact' smooth={true}>Contact</Link>
+        </div>
+        <div className='buttonLabel'>
+            <Link to='location' smooth={true}>Location</Link>
+        </div>
         <div className='socialsSub'>
           <a
             href='https://www.instagram.com/hair_by_alana1/'
@@ -77,12 +49,4 @@ export default class MenuBar extends Component {
       </div>
     )
   }
-}
-
-MenuBar.propTypes = {
-  anchorA: PropTypes.string.isRequired,
-  anchorB: PropTypes.string.isRequired,
-  anchorC: PropTypes.string.isRequired,
-  anchorD: PropTypes.string.isRequired,
-  anchorE: PropTypes.string.isRequired
 }
