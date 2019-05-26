@@ -22,8 +22,8 @@ class App extends Component {
           anchorA='#about'
           anchorB='#gallery'
           anchorC='#testimonials'
-          anchorD='#location'
-          anchorE='#contact'
+          anchorD='#contact'
+          anchorE='#location'
         />
         <div className='content'>
           <SalonScroller />
@@ -51,11 +51,14 @@ class App extends Component {
                 <Contact />
               </div>
             </ScrollableAnchor>
+            <div>
+
             <ScrollableAnchor id={'location'}>
               <div className='content'>
                 <Location />
               </div>
             </ScrollableAnchor>
+            </div>
           </div>
           <div className='sideSpacer'/>
         </div>

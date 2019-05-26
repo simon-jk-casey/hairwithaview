@@ -47,7 +47,7 @@ export default class MenuBar extends Component {
           href={this.props.anchorD}
         >
           <p className='buttonLabel'>
-            Location
+            Contact
           </p>
         </a>
         <a
@@ -55,7 +55,7 @@ export default class MenuBar extends Component {
           href={this.props.anchorE}
         >
           <p className='buttonLabel'>
-            Contact
+            Location
           </p>
         </a>
         <div className='socialsSub'>
