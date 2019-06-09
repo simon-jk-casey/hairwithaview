@@ -9,6 +9,7 @@ import Footer from './components/footer/Footer'
 import MenuBar from './components/menu/MenuBar'
 import SalonScroller from './components/salonScroller/SalonScroller'
 import Location from './components/location/Location'
+import Hamburger from './components/hamburger/Hamburger'
 
 import './App.css'
 
@@ -16,6 +17,7 @@ class App extends Component {
   render () {
     return (
       <div className='App'>
+        <Hamburger />
         <Banner />
         <MenuBar />
         <div className='content'>

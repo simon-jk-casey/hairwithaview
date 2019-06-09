@@ -20,8 +20,13 @@ export default class MenuBar extends Component {
             <Link to='testimonials' smooth={true}>Testimonials</Link>
         </div>
         <div className='buttonLabel'>
-            <a id='menuAnchor' href={priceList} target='_blank' rel='noopener noreferrer'>
-              <span> Services </span>
+            <a 
+              id='menuAnchor'
+              href={priceList}
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <span>Services</span>
             </a>
         </div>
         <div className='buttonLabel'>
@@ -36,7 +41,7 @@ export default class MenuBar extends Component {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img className='igramLogo' src={igramLogo} alt='Instagram' />              
+            <img className='igramLogo' src={igramLogo} alt='Instagram' />  
           </a>
           <a
             href='https://www.facebook.com/hairwav/'

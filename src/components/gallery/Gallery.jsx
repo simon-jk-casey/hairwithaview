@@ -82,11 +82,7 @@ export default class Gallery extends Component {
       <h2>Gallery</h2>
       <div className='galleryWrapper'>
         <div className='buttonWrapperLeft'>
-          <button
-            onClick={this.prevImg.bind(this)}
-          >
-            &lt;
-          </button>
+          <button onClick={this.prevImg.bind(this)}>&lt;</button>
         </div>
         <div className='galleryImgWrapper'>
           <img
@@ -95,11 +91,7 @@ export default class Gallery extends Component {
           />
         </div>
         <div className='buttonWrapperRight'>
-        <button
-          onClick={this.nextImg.bind(this)}
-        >
-          &gt;
-        </button>
+        <button onClick={this.nextImg.bind(this)}>&gt;</button>
         </div>
       </div>
       </div>
