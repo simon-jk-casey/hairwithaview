@@ -1,5 +1,27 @@
 @media only screen and (min-width : 1224px) {
-  .hamMenuCont {
+  .hamMenu {
     display: none;
   }
+}
+
+.hamMenu {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; 
+  z-index: 10;
+  text-align: left;
+}
+
+.menuContainer {
+  z-index: 10;
+  position: absolute;
+  width: 45vw;
+  background-color: black;
+  padding-left: 1.5em;
+}
+
+.mobile {
+  font-size: 2em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }

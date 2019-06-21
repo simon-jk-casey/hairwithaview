@@ -31,7 +31,7 @@ export default class Hamburger extends Component {
 
   render () {
     return (
-      <div className='hamMenuCont'>
+      <div className='hamMenu'>
         <button onClick={this.toggleMenu.bind(this)}>TEST</button>
         {this.showHideMenu()}
       </div>
@@ -42,17 +42,17 @@ export default class Hamburger extends Component {
 class Menu extends Component {
   render () {
     return (
-      <div>
-        <div className='buttonLabel'>
+      <div className='menuContainer'>
+        <div className='buttonLabel mobile'>
           <Link to='about' smooth={true}>About Us</Link>
         </div>
-        <div className='buttonLabel'>
+        <div className='buttonLabel mobile'>
           <Link to='gallery' smooth={true}>Gallery</Link>
         </div>
-        <div className='buttonLabel'>
+        <div className='buttonLabel mobile'>
           <Link to='testimonials' smooth={true}>Testimonials</Link>
         </div>
-        <div className='buttonLabel'>
+        <div className='buttonLabel mobile'>
           <a 
             id='menuAnchor'
             href={priceList}
@@ -62,13 +62,13 @@ class Menu extends Component {
             <span>Services</span>
           </a>
         </div>
-        <div className='buttonLabel'>
+        <div className='buttonLabel mobile'>
           <Link to='contact' smooth={true}>Contact</Link>
         </div>
-        <div className='buttonLabel'>
+        <div className='buttonLabel mobile'>
           <Link to='location' smooth={true}>Location</Link>
         </div>
-        <div className='buttonLabel'>
+        <div className='mobile'>
           <a
             href='https://www.instagram.com/hair_by_alana1'
             target='_blank'
