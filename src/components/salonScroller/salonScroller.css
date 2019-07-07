@@ -2,5 +2,7 @@
 @media only screen and (max-width : 1024px) {
   .salonImg {
     width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
   }
 }

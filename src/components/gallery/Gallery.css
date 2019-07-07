@@ -25,6 +25,11 @@
 }
 
 @media only screen and (max-width : 1024px) {
+
+  .gallery {
+    height: 500px;
+  }
+
   .galleryImgWrapper {
     width: 100%;
     margin-left: -10%;
@@ -32,7 +37,8 @@
   }
 
   .galleryImg {
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
   }
 
   .buttonWrapperLeft {

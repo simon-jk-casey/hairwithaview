@@ -56,4 +56,17 @@ p {
     padding-left: 2.5%;
     padding-right: 2.5%;
   }
+
+  .content {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1em;
+  }
 }

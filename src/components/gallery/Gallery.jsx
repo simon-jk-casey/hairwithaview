@@ -78,7 +78,7 @@ export default class Gallery extends Component {
 
   render() {
     return (
-      <div>
+      <div className='gallery'>
       <h2>Gallery</h2>
       <div className='galleryWrapper'>
         <div className='buttonWrapperLeft'>
