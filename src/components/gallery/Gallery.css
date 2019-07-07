@@ -25,20 +25,19 @@
 }
 
 @media only screen and (max-width : 1024px) {
-
-  .gallery {
-    height: 500px;
-  }
-
   .galleryImgWrapper {
     width: 100%;
     margin-left: -10%;
     margin-right: -10%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   .galleryImg {
     width: 110%;
-    margin-left: -5%;
   }
 
   .buttonWrapperLeft {
