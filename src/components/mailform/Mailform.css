@@ -55,3 +55,27 @@ textarea {
   font-size: 1em;
   font-style: italic;
 }
+
+@media only screen and (max-width : 1024px) {
+  ::placeholder {
+    color: red;
+  }
+
+  .fieldLabel {
+    margin: 0;
+    width: 20%;
+    padding-right: 2.5%
+  }
+
+  input {
+    width: 60%;
+  }
+
+  textarea {
+    width: 60%
+  }
+
+  .formSubmit {
+    width: 50%;
+  }
+}

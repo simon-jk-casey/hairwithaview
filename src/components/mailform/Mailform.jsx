@@ -110,7 +110,7 @@ export default class Mailform extends Component {
       return (
         <form onSubmit={this.handleSubmit}>
           <div className='fieldContainer'>
-            <span className='fieldLabel'>Name:</span>
+            <span className='fieldLabel'>Name</span>
             <input
               type='text'
               name='name'
@@ -120,7 +120,7 @@ export default class Mailform extends Component {
             />
           </div>
           <div className='fieldContainer'>
-            <span className='fieldLabel'>Email Address:</span>
+            <span className='fieldLabel'>Email</span>
             <input
               type='email'
               name='email'
@@ -130,7 +130,7 @@ export default class Mailform extends Component {
             />
           </div>
           <div className='fieldContainer'>
-            <span className='fieldLabel'>Message:</span>
+            <span className='fieldLabel'>Message</span>
             <textarea
               rows='5'
               name='message'
