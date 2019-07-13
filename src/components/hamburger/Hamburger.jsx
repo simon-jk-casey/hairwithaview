@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-scroll'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faRedRiver } from '@fortawesome/free-solid-svg-icons'
+  
 import './Hamburger.css'
 import priceList from '../../assets/other/hwav_pricelist.pdf'
 import fbookLogo from '../../assets/images/social_icons/fbook.png'
@@ -14,6 +16,25 @@ export default class Hamburger extends Component {
     }
   }
 
+  ohHamburgers() {
+    if (!this.state.menuToggled) {
+      return <FontAwesomeIcon className='hamburger' icon={faBars} size='2x' onClick={this.toggleMenu.bind(this)} />
+    } else {
+      return (
+        <div>
+          <FontAwesomeIcon
+            className='hamburger rotated'
+            icon={faBars}
+            size='2x'
+            rotation='90'
+            onClick={this.toggleMenu.bind(this)}
+          />
+          <Menu />
+        </div>
+      )
+    }
+  } 
+
   toggleMenu() {
     this.setState(prevState => ({
       menuToggled: !prevState.menuToggled
@@ -21,19 +42,11 @@ export default class Hamburger extends Component {
     console.log(this.state)
   }
 
-  showHideMenu() {
-    if (this.state.menuToggled) {
-      return <Menu />
-    } else {
-      return
-    }
-  }
-
   render () {
     return (
       <div className='hamMenu'>
-        <button onClick={this.toggleMenu.bind(this)}>TEST</button>
-        {this.showHideMenu()}
+        {this.ohHamburgers()}
+        {/* {this.showHideMenu()} */}
       </div>
     )
   }

@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import './Gallery.css'
 
@@ -82,7 +84,12 @@ export default class Gallery extends Component {
       <h2>Gallery</h2>
       <div className='galleryWrapper'>
         <div className='buttonWrapperLeft'>
-          <button onClick={this.prevImg.bind(this)}>&lt;</button>
+          <FontAwesomeIcon
+            className='galleryIcon'
+            icon={faChevronLeft}
+            size='3x'
+            onClick={this.prevImg.bind(this)}
+          />
         </div>
         <div className='galleryImgWrapper'>
           <img
@@ -91,7 +98,12 @@ export default class Gallery extends Component {
           />
         </div>
         <div className='buttonWrapperRight'>
-        <button onClick={this.nextImg.bind(this)}>&gt;</button>
+            <FontAwesomeIcon
+              className='galleryIcon'
+              icon={faChevronRight}
+              size='3x'
+              onClick={this.nextImg.bind(this)}
+            />
         </div>
       </div>
       </div>

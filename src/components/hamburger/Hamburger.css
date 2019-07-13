@@ -8,20 +8,28 @@
   position: -webkit-sticky;
   position: sticky;
   top: 0; 
-  z-index: 10;
   text-align: left;
 }
 
 .menuContainer {
-  z-index: 10;
   position: absolute;
-  width: 45vw;
-  background-color: black;
-  padding-left: 1.5em;
+  width: 40vw;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding-left: 0.35em;
 }
 
 .mobile {
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 0.75em;
   margin-bottom: 0.75em;
+}
+
+.hamburger {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.25em;
+}
+
+.rotated {
+  margin-top: -0.1em;
+  margin-bottom: -0.05em;
 }

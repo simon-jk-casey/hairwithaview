@@ -11,12 +11,12 @@
 }
 
 .testButtonContainerLeft {
-  text-align: center;
+  margin-top: -2em;
   width: 15%;
 }
 
 .testButtonContainerRight {
-  text-align: center;
+  margin-top: -2em;
   width: 15%;
 }
 
