@@ -19,10 +19,6 @@ export default class Gallery extends Component {
           alt: 'style2'
         },
         {
-          img: require('../../assets/images/gallery_images/style_3.jpg'),
-          alt: 'style3'
-        },
-        {
           img: require('../../assets/images/gallery_images/style_4.jpg'),
           alt: 'style4'
         },
@@ -81,7 +77,7 @@ export default class Gallery extends Component {
   render() {
     return (
       <div className='gallery'>
-      <h2 className='galleryHeader'>Gallery</h2>
+      <h2>Gallery</h2>
       <div className='galleryWrapper'>
         <div className='buttonWrapperLeft'>
           <FontAwesomeIcon
@@ -99,7 +95,7 @@ export default class Gallery extends Component {
         </div>
         <div className='buttonWrapperRight'>
             <FontAwesomeIcon
-              className='galleryIcon'
+              className='galleryIcon right'
               icon={faChevronRight}
               size='3x'
               onClick={this.nextImg.bind(this)}

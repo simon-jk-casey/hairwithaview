@@ -1,8 +1,5 @@
-.galleryImg {
-}
-
 .galleryImgWrapper {
-  width: 70%;
+  width: 100%;
   margin-left: -5%;
   margin-right: -5%;
   display: flex;
@@ -21,6 +18,7 @@
 .galleryIcon {
   cursor: pointer;
   color: rgb(64, 64, 64);
+  position: absolute;
 }
 
 .buttonWrapperLeft {
@@ -33,7 +31,7 @@
   /* text-align: left; */
 }
 
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 480px) {
   .galleryImgWrapper {
     width: 100%;
     margin-left: -10%;
@@ -57,7 +55,7 @@
     z-index: 10;
   }
 
-  .galleryHeader {
-    margin-bottom: -0.05em;
+  .right {
+    margin-left: -6%;
   }
 }
