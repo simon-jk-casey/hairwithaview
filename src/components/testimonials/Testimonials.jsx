@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 import './Testimonials.css'
 
@@ -51,17 +53,27 @@ export default class Testimonials extends Component {
   render () {
     return (
       <div className='bodyComponent'>
-        <h2>Testimonials</h2>
+        <h2 className='testHeader'>Testimonials</h2>
         <div className='testimonialContainer'>
           <div className='testButtonContainerLeft'>
-            <button onClick={this.prevTest.bind(this)}>back</button>
+            <FontAwesomeIcon
+              className='testIcon'
+              icon={faChevronLeft}
+              size='2x'
+              onClick={this.prevTest.bind(this)}
+            />
           </div>
           <div className='testimonialPane'>
             <p>{this.state.testimonials[this.state.index].feedback}</p>
             <p> - {this.state.testimonials[this.state.index].name}</p>
           </div>
           <div className='testButtonContainerRight'>
-            <button onClick={this.nextTest.bind(this)}>fwd</button>
+            <FontAwesomeIcon
+              className='testIcon'
+              icon={faChevronRight}
+              size='2x'
+              onClick={this.nextTest.bind(this)}
+            />
           </div>
         </div>
       </div>

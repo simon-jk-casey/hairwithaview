@@ -1,3 +1,10 @@
+input[type='text'], input[type='email'], textarea {
+  font-family: 'aileronthin';
+  color: black;
+  font-weight: 800;
+  font-size: 1em;
+}
+
 .fieldContainer {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -54,4 +61,28 @@ textarea {
   font-family: 'aileronthin';
   font-size: 1em;
   font-style: italic;
+}
+
+@media only screen and (max-width : 1024px) {
+  ::placeholder {
+    color: red;
+  }
+
+  .fieldLabel {
+    margin: 0;
+    width: 20%;
+    padding-right: 2.5%
+  }
+
+  input {
+    width: 60%;
+  }
+
+  textarea {
+    width: 60%
+  }
+
+  .formSubmit {
+    width: 50%;
+  }
 }

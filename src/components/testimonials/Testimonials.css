@@ -11,12 +11,27 @@
 }
 
 .testButtonContainerLeft {
-  text-align: center;
+  margin-top: -2em;
   width: 15%;
 }
 
 .testButtonContainerRight {
-  text-align: center;
+  margin-top: -2em;
   width: 15%;
+}
+
+.testIcon {
+    cursor: pointer;
+    color: rgb(64, 64, 64);
+}
+
+@media only screen and (max-width : 1024px) {
+  .testimonialContainer {
+    height: 10em;
+  }
+
+  /* .testHeader {
+    margin-bottom: 0;
+  } */
 }
 
