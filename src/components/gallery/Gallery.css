@@ -1,5 +1,5 @@
 .galleryImgWrapper {
-  width: 100%;
+  width: 70%;
   margin-left: -5%;
   margin-right: -5%;
   display: flex;
@@ -23,17 +23,20 @@
 
 .buttonWrapperLeft {
   width: 15%;
-  /* text-align: right; */
+  text-align: right;
 }
 
 .buttonWrapperRight {
   width: 15%;
-  /* text-align: left; */
+  text-align: left;
 }
 
 @media only screen and (max-width : 480px) {
+  .galleryWrapper {
+    margin-top: -7.5%;
+  }
   .galleryImgWrapper {
-    width: 100%;
+    width: 80%;
     margin-left: -10%;
     margin-right: -10%;
     height: 500px;
@@ -44,14 +47,18 @@
   }
 
   .galleryImg {
-    width: 110%;
+    max-width: 100%;
   }
 
   .buttonWrapperLeft {
+    width: 10%;
+    text-align: left;
     z-index: 10;
   }
 
   .buttonWrapperRight {
+    width: 10%;
+    text-align: right;
     z-index: 10;
   }
 
