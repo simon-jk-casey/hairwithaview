@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Link } from 'react-scroll'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 import './MenuBar.css'
 import priceList from '../../assets/other/hwav_pricelist.pdf'
-import fbookLogo from '../../assets/images/social_icons/fbook.png'
-import igramLogo from '../../assets/images/social_icons/igram.png'
 
 export default class MenuBar extends Component {
   render () {
@@ -35,20 +35,28 @@ export default class MenuBar extends Component {
         <div className='buttonLabel'>
             <Link to='location' smooth={true}>Location</Link>
         </div>
-        <div className='socialsSub'>
+        <div>
           <a
             href='https://www.instagram.com/hair_by_alana1/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img className='igramLogo' src={igramLogo} alt='Instagram' />  
+            <FontAwesomeIcon
+              className='instaIcon'
+              icon={faInstagram}
+              size='3x'
+            />
           </a>
           <a
             href='https://www.facebook.com/hairwav/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img className='fbookLogo' src={fbookLogo} alt='Facebook' />
+            <FontAwesomeIcon
+              className='fbIcon'
+              icon={faFacebookSquare}
+              size='3x'
+            />
           </a>
         </div>
       </div>

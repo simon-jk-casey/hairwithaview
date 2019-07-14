@@ -13,9 +13,9 @@
 
 .menuContainer {
   position: absolute;
-  width: 40vw;
+  width: 32vw;
   background-color: rgba(255, 255, 255, 0.75);
-  padding-left: 0.35em;
+  padding-left: 0.75em;
 }
 
 .mobile {
@@ -27,6 +27,10 @@
 .hamburger {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 0.25em;
+}
+
+.noRotate {
+  margin-top: -5px;
 }
 
 .rotated {

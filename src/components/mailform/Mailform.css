@@ -1,3 +1,10 @@
+input[type='text'], input[type='email'], textarea {
+  font-family: 'aileronthin';
+  color: black;
+  font-weight: 800;
+  font-size: 1em;
+}
+
 .fieldContainer {
   margin-top: 2em;
   margin-bottom: 2em;

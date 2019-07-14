@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 import { Link } from 'react-scroll'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars, faRedRiver } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons'
   
 import './Hamburger.css'
 import priceList from '../../assets/other/hwav_pricelist.pdf'
-import fbookLogo from '../../assets/images/social_icons/fbook.png'
-import igramLogo from '../../assets/images/social_icons/igram.png'
 
 export default class Hamburger extends Component {
   constructor(props) {
@@ -18,7 +17,7 @@ export default class Hamburger extends Component {
 
   ohHamburgers() {
     if (!this.state.menuToggled) {
-      return <FontAwesomeIcon className='hamburger' icon={faBars} size='2x' onClick={this.toggleMenu.bind(this)} />
+      return <FontAwesomeIcon className='hamburger noRotate' icon={faBars} size='2x' onClick={this.toggleMenu.bind(this)} />
     } else {
       return (
         <div>
@@ -26,7 +25,7 @@ export default class Hamburger extends Component {
             className='hamburger rotated'
             icon={faBars}
             size='2x'
-            rotation='90'
+            rotation={90}
             onClick={this.toggleMenu.bind(this)}
           />
           <Menu />
@@ -46,7 +45,6 @@ export default class Hamburger extends Component {
     return (
       <div className='hamMenu'>
         {this.ohHamburgers()}
-        {/* {this.showHideMenu()} */}
       </div>
     )
   }
@@ -87,14 +85,22 @@ class Menu extends Component {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img className='igramLogo' src={igramLogo} alt='Instagram' />
+            <FontAwesomeIcon
+              className='instaIcon'
+              icon={faInstagram}
+              size='2x'
+            />
           </a>
           <a
             href='https://www.facebook.com/hairwav/'
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img className='fbookLogo' src={fbookLogo} alt='Facebook' />
+            <FontAwesomeIcon
+              className='fbIcon'
+              icon={faFacebookSquare}
+              size='2x'
+            />
           </a>
         </div>
       </div>

@@ -20,6 +20,7 @@
 
 .galleryIcon {
   cursor: pointer;
+  color: rgb(64, 64, 64);
 }
 
 .buttonWrapperLeft {
@@ -54,5 +55,9 @@
 
   .buttonWrapperRight {
     z-index: 10;
+  }
+
+  .galleryHeader {
+    margin-bottom: -0.05em;
   }
 }

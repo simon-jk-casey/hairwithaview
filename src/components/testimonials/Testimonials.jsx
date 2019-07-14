@@ -53,7 +53,7 @@ export default class Testimonials extends Component {
   render () {
     return (
       <div className='bodyComponent'>
-        <h2>Testimonials</h2>
+        <h2 className='testHeader'>Testimonials</h2>
         <div className='testimonialContainer'>
           <div className='testButtonContainerLeft'>
             <FontAwesomeIcon

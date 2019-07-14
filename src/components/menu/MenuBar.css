@@ -7,6 +7,13 @@
   position: sticky;
   top: 0;
   background-color: rgba(255, 255, 255, 0.75);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-color: rgba(64, 64, 64, 0.5)
 }
 
 .testIcon {
@@ -32,22 +39,16 @@ a {
   color: #E75480;
 }
 
-.socialsSub {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-
 a {
   text-decoration: none;
 }
 
-.igramLogo {
-  width: 50px;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  border-radius: 5px;
-  padding: 4px;
-  margin-right: 14.5px;
+.instaIcon {
+  margin-right: 0.125em;
+  color: rgb(64, 64, 64);
+}
+
+.fbIcon {
+  margin-left: 0.125em;
+  color: rgb(64, 64, 64);
 }
