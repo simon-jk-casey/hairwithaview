@@ -20,9 +20,6 @@ export default class Location extends Component {
             allowFullScreen
           />
         </div>
-        <div>
-          <p>There is plenty of on-street parking available.  You can find the salon down the driveway.</p>
-        </div>
       </div>
     )
   }
