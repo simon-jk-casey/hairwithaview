@@ -80,6 +80,3 @@ export default class Testimonials extends Component {
     )
   }
 }
-
-// function to cycle thru state testimonials - need an index in state?
-// replace back/fwd with icons later

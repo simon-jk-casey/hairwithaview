@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 
 import Mailform from '../mailform/Mailform'
-import './Contact.css'
 
 export default class Contact extends Component {
   render () {
