@@ -70,11 +70,6 @@ export default class Mailform extends Component {
 
   handleChange (e) {
     this.setState({ [e.target.name]: e.target.value })
-    console.log(this.state, 'input change')
-  }
-
-  testClick () {
-    console.log(this.state)
   }
 
   reloadFormSuccess () {
@@ -88,14 +83,14 @@ export default class Mailform extends Component {
   toggleSending () {
     this.setState(prevState => ({
       sending: !prevState.sending
-    }), () => console.log(this.state, 'toggle test'))
+    }))
   }
 
   toggleSendSuccess () {
     this.setState(prevState => ({
       sending: !prevState.sending,
       sendSuccess: !prevState.sendSuccess
-    }), () => console.log(this.state.sendSuccess, 'sent'))
+    }))
   }
 
   toggleSendError () {
@@ -115,7 +110,7 @@ export default class Mailform extends Component {
       content: this.state.message
     }
 
-    axios.post(`https://rvsat317q2.execute-api.us-east-1.amazonaws.com/dev/email/send`, data) // removed URL while unsecured
+    axios.post(`https://rvsat317q2.execute-api.us-east-1.amazonaws.com/dev/email/send`, data)
       .then((response) => {
         if (response.status === 200) {
           this.toggleSendSuccess()
