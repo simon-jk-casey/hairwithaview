@@ -11,11 +11,11 @@
 }
 
 .buttonWrapperLeft {
-  padding-right: 1em;
+  padding-right: 2em;
 }
 
 .buttonWrapperRight {
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -31,4 +31,13 @@
  .galleryWrapper {
    height: 400px;
  }
+
+ .buttonWrapperLeft {
+   padding-right: 0.5em;
+ }
+
+ .buttonWrapperRight {
+   padding-left: 0.5em;
+ }
+
 }
