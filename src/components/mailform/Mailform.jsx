@@ -115,7 +115,7 @@ export default class Mailform extends Component {
       content: this.state.message
     }
 
-    axios.post(`https://rvsat317q2.execute-api-us-east-1.amazonaws.com/dev/email/send`, data) // removed URL while unsecured
+    axios.post(`https://rvsat317q2.execute-api.us-east-1.amazonaws.com/dev/email/send`, data) // removed URL while unsecured
       .then((response) => {
         if (response.status === 200) {
           this.toggleSendSuccess()
