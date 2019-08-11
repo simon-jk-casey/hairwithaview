@@ -16,8 +16,9 @@
 
 .App {
   text-align: center;
-  background-image: url('./assets/images/background.jpg');
-  background-repeat: no-repeat;
+  /* background-image: url('./assets/images/background.jpg');
+  background-repeat: no-repeat; */
+  background-color: #FFF5EE;
   background-attachment: fixed;
   background-size: cover;
 }
