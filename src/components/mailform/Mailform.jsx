@@ -115,14 +115,12 @@ export default class Mailform extends Component {
         if (response.status === 200) {
           this.toggleSendSuccess()
         }
-        console.log(response.status, 'axios send response status')
       })
       .catch((err) => {
         if (err) {
           this.toggleSendError()
         }
       })
-    console.log(this.state, 'check state clear:')
   }
 
   render () {
