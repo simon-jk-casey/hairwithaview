@@ -28,7 +28,7 @@ export default class Hamburger extends Component {
             rotation={90}
             onClick={this.toggleMenu.bind(this)}
           />
-          <Menu />
+          <Menu toggle={this.toggleMenu.bind(this)}/>
         </div>
       )
     }
@@ -38,7 +38,6 @@ export default class Hamburger extends Component {
     this.setState(prevState => ({
       menuToggled: !prevState.menuToggled
     }))
-    console.log(this.state)
   }
 
   render () {
@@ -55,13 +54,13 @@ class Menu extends Component {
     return (
       <div className='menuContainer'>
         <div className='buttonLabel mobile'>
-          <Link to='about' smooth={true}>About Us</Link>
+          <Link to='about' smooth={true} onClick={this.props.toggle}>About Us</Link>
         </div>
         <div className='buttonLabel mobile'>
-          <Link to='gallery' smooth={true}>Gallery</Link>
+          <Link to='gallery' smooth={true} onClick={this.props.toggle}>Gallery</Link>
         </div>
         <div className='buttonLabel mobile'>
-          <Link to='testimonials' smooth={true}>Testimonials</Link>
+          <Link to='testimonials' smooth={true} onClick={this.props.toggle}>Testimonials</Link>
         </div>
         <div className='buttonLabel mobile'>
           <a 
@@ -69,21 +68,23 @@ class Menu extends Component {
             href={priceList}
             target='_blank'
             rel='noopener noreferrer'
+            onClick={this.props.toggle}
           >
             <span>Services</span>
           </a>
         </div>
         <div className='buttonLabel mobile'>
-          <Link to='contact' smooth={true}>Contact</Link>
+          <Link to='contact' smooth={true} onClick={this.props.toggle}>Contact</Link>
         </div>
         <div className='buttonLabel mobile'>
-          <Link to='location' smooth={true}>Location</Link>
+          <Link to='location' smooth={true} onClick={this.props.toggle}>Location</Link>
         </div>
         <div className='mobile'>
           <a
             href='https://www.instagram.com/hair_by_alana1'
             target='_blank'
             rel='noopener noreferrer'
+            onClick={this.props.toggle}
           >
             <FontAwesomeIcon
               className='instaIcon'
@@ -95,6 +96,7 @@ class Menu extends Component {
             href='https://www.facebook.com/hairwav/'
             target='_blank'
             rel='noopener noreferrer'
+            onClick={this.props.toggle}
           >
             <FontAwesomeIcon
               className='fbIcon'
