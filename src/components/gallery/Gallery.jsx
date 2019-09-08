@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Swipeable } from 'react-swipeable'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -88,10 +89,15 @@ export default class Gallery extends Component {
           />
         </div>
         <div className='galleryImgWrapper'>
+          <Swipeable
+            onSwipedLeft={this.prevImg.bind(this)}
+            onSwipedRight={this.nextImg.bind(this)}
+          >
           <img
             className='galleryImg'
             src={this.state.images[this.state.index].img} alt={this.state.images[this.state.index].alt}
           />
+          </Swipeable>
         </div>
         <div className='buttonWrapperRight'>
             <FontAwesomeIcon
