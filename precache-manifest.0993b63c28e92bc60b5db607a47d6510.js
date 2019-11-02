@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "39b2a6cd475309333a39cf1ebd6eb545",
+    "revision": "f27d4d3893bfd2db8afb3c6194be398d",
     "url": "/index.html"
   },
   {
-    "revision": "b5c6fdc142644243a9bb",
+    "revision": "33084211bba5353b7bb8",
     "url": "/static/css/main.60e2f0ce.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.262376ae.chunk.js"
   },
   {
-    "revision": "b5c6fdc142644243a9bb",
-    "url": "/static/js/main.4cd603c0.chunk.js"
+    "revision": "33084211bba5353b7bb8",
+    "url": "/static/js/main.5c1d0183.chunk.js"
   },
   {
     "revision": "0518892b455066367048",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/hwav_logo.ee71f01f.png"
   },
   {
-    "revision": "c85e529685b0d5cb546b00e065c0291b",
-    "url": "/static/media/hwav_pricelist.c85e5296.pdf"
+    "revision": "c398074e3b2a8498770136f5c98bf648",
+    "url": "/static/media/hwav_pricelist.c398074e.pdf"
   },
   {
     "revision": "4bc127f1f2d6f4c45249890074910fa7",
