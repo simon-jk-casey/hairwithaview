@@ -10,6 +10,7 @@ import MenuBar from './components/menu/MenuBar'
 import SalonScroller from './components/salonScroller/SalonScroller'
 import Location from './components/location/Location'
 import Hamburger from './components/hamburger/Hamburger'
+import Services from './components/services/Services'
 
 import './App.css'
 
@@ -28,6 +29,7 @@ class App extends Component {
             <div className='sideSpacer'/>
             <div className='mainBodyContent'>
               <div id='about' className='content'><About /></div>
+              <div id='services' className='content'><Services/></div>
               <div id='gallery' className='content'><Gallery /></div>
               <div id='testimonials' className='content'><Testimonials /></div>
               <div id='contact' className='content'><Contact /></div>
