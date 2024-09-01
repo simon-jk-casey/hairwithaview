@@ -55,22 +55,88 @@ const toner = [
     {
         id: 8,
         type: "Toner ~ Cut",
-        price: "$155.00"
+        price: "$155"
+    },
+    {
+        id: 9,
+        type: "Toner ~ No Cut",
+        price: "$100"
+    }
+
+]
+
+const ombre = [
+    {
+        id: 10,
+        type: "Ombre ~ Cut",
+        price: "$355"
+    },
+    {
+        id: 11,
+        type: "Ombre ~ No Cut",
+        price: "$305"
     }
 ]
 
+const fullHead = [
+    {
+        id: 12,
+        type: "Full Head ~ Cut",
+        price: "$330"
+    },
+    {
+        id: 13,
+        type: "Full Head ~ No Cut",
+        price: "$280"
+    }
+]
+
+const halfHead = [
+    {
+        id: 13,
+        type: "Half Head ~ Cut",
+        price: "$280"
+    },
+    {
+        id: 14,
+        type: "Half Head ~ No Cut",
+        price: "$230"
+    }
+]
+
+const foils = [
+    {
+        id: 15,
+        type: "Foils and Base Colour ~ Cut",
+        price: "$380"
+    },
+    {
+        id: 16,
+        type: "Foils and Base Colour ~ No Cut",
+        price: "$350"
+    }
+]
+
+const other = [
+    {
+        id: 17,
+        type: "Special Hair Up",
+        price: "$90"
+    },
+    {
+        id: 18,
+        type: "Wash & Blowdry",
+        price: "$75"
+    },
+    {
+        id: 19,
+        type: "Aura Smoothing",
+        price: "$300"
+    }
+]
+
+
 export default class Services extends Component {
-
-    // listCreator(arr) {
-
-    //     arr.map(element => {
-    //         return (
-    //             <listSection>
-    //                 <listItem><category>{element.type}</category></listItem>
-    //             </listSection>
-    //         )
-    //     });
-    // }
 
     render () {
         return (
@@ -80,24 +146,88 @@ export default class Services extends Component {
                     {cuts.map(element => {
                         return (
                             <div key={element.id} className='listItem'>
-                                <div><p>{element.type}</p></div>
-                                <div><p>{element.price}</p></div>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
                             </div>
                         )
                     })}
+                </div>
+                <div className='listSection'>
                     {roots.map(element => {
                         return (
                             <div key={element.id} className='listItem'>
-                                <div><p>{element.type}</p></div>
-                                <div><p>{element.price}</p></div>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
                             </div>
                         )
                     })}
+                </div>
+                <div className='listSection'>
                     {through.map(element => {
                         return (
                             <div key={element.id} className='listItem'>
-                                <div><p>{element.type}</p></div>
-                                <div><p>{element.price}</p></div>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='listSection'>
+                    {toner.map(element => {
+                        return (
+                            <div key={element.id} className='listItem'>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='listSection'>
+                    {ombre.map(element => {
+                        return (
+                            <div key={element.id} className='listItem'>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='listSection'>
+                    {fullHead.map(element => {
+                        return (
+                            <div key={element.id} className='listItem'>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='listSection'>
+                    {halfHead.map(element => {
+                        return (
+                            <div key={element.id} className='listItem'>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='listSection'>
+                    {foils.map(element => {
+                        return (
+                            <div key={element.id} className='listItem'>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className='listSection'>
+                    {other.map(element => {
+                        return (
+                            <div key={element.id} className='listItem'>
+                                <div className='serviceItem'><p className='listText'>{element.type}</p></div>
+                                <div className='servicePrice'><p className='listText'>{element.price}</p></div>
                             </div>
                         )
                     })}

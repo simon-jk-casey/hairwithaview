@@ -1,0 +1,24 @@
+.listItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.serviceItem {
+    text-align: left;
+    width: 15%;
+}
+
+.servicePrice {
+    text-align: right;
+    width: 15%
+}
+
+.listText {
+    margin: 0;
+}
+
+.listSection {
+    margin-bottom: 1.5em;
+}
+
