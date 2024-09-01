@@ -4,36 +4,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons'
 
 import './MenuBar.css'
-import priceList from '../../assets/other/hwav_pricelist.pdf'
+// import priceList from '../../assets/other/hwav_pricelist.pdf'
 
 export default class MenuBar extends Component {
   render () {
     return (
       <div className='menu'>
         <div className='buttonLabel'>
-            <Link to='about' smooth={true}>About Us</Link>
+          <Link to='about' smooth={true}>About Us</Link>
         </div>
         <div className='buttonLabel'>
-            <Link to='gallery' smooth={true}>Gallery</Link>
+          <Link to='services' smooth={true}>Services</Link>
         </div>
         <div className='buttonLabel'>
-            <Link to='testimonials' smooth={true}>Testimonials</Link>
+          <Link to='gallery' smooth={true}>Gallery</Link>
         </div>
         <div className='buttonLabel'>
-            <a 
-              id='menuAnchor'
-              href={priceList}
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              <span>Services</span>
-            </a>
+          <Link to='testimonials' smooth={true}>Testimonials</Link>
         </div>
         <div className='buttonLabel'>
-            <Link to='contact' smooth={true}>Contact</Link>
+          <Link to='contact' smooth={true}>Contact</Link>
         </div>
         <div className='buttonLabel'>
-            <Link to='location' smooth={true}>Location</Link>
+          <Link to='location' smooth={true}>Location</Link>
         </div>
         <div>
           <a
