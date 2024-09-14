@@ -22,6 +22,10 @@
     margin-bottom: 1.5em;
 }
 
+.makeItBigger {
+    font-size: 1.5em;
+}
+
 @media only screen and (max-width : 1024px) {
     .serviceItem {
         width: 70%;

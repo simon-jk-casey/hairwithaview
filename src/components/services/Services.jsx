@@ -232,7 +232,7 @@ export default class Services extends Component {
                         )
                     })}
                 </div>
-                <h4>All prices are a guideline and GST inclusive. Extra charges will apply for more product if required.</h4>
+                <h3 className="makeItBigger">All prices are a guideline and GST inclusive. Extra charges will apply for more product if required.</h3>
             </div>
         )
     }
