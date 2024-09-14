@@ -6,7 +6,7 @@ export default class About extends Component {
       <div className='aboutComponent'>
         <h2>About Us</h2>
         <p>
-          Give treat yourself a whole new meaning with a trip out to Hair With A View - a luxury home-style salon nestled in the heart of Brooklyn’s luscious Valley.
+          Give "treat yourself" a whole new meaning with a trip out to Hair With A View.  A luxury home-style salon nestled in the heart of Brooklyn’s luscious Valley.
         </p>
         <p>
           Just a few minutes out of Wellington City, our salon offers clients an escape from the hustle and bustle of everyday life and and the chance to slow it all down. Relax and retreat above the valley below in our peaceful hair haven, where we encourage you to swap out the to-do list for some quality YOU time.

@@ -68,12 +68,12 @@ const toner = [
 const ombre = [
     {
         id: 10,
-        type: "Ombre ~ Cut",
+        type: "Ombre/Balayage ~ Cut",
         price: "$355"
     },
     {
         id: 11,
-        type: "Ombre ~ No Cut",
+        type: "Ombre/Balayage ~ No Cut",
         price: "$305"
     }
 ]

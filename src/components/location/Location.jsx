@@ -12,7 +12,7 @@ export default class Location extends Component {
         </div>
         <div className='mapWrapper'>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1475.465466367027!2d174.7563114191524!3d-41.31459326434064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b00c2dc8d53d%3A0xc16cc02be8fed26!2s224+Mitchell+St%2C+Brooklyn%2C+Wellington+6021!5e0!3m2!1sen!2snz!4v1556430151763!5m2!1sen!2snz"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d445.46538044842583!2d174.75744517326225!3d-41.31491245742489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38b179c71e085b%3A0x1e3e1110189c0935!2sHair%20with%20a%20view!5e0!3m2!1sen!2snz!4v1725168128029!5m2!1sen!2snz" 
             width="800"
             height="675"
             frameBorder="0"

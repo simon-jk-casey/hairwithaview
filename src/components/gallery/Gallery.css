@@ -4,6 +4,8 @@
   justify-content: center;
   align-items: center;
   height: auto;
+  /* margin-top: 3em;
+  margin-bottom: 3em; */
 }
 
 .galleryImgWrapper {
@@ -29,7 +31,7 @@
  }
 
  .galleryWrapper {
-   height: 400px;
+   height: auto;
  }
 
  .buttonWrapperLeft {
