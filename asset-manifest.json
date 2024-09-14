@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/hairwithaview/static/css/main.434ee9d3.css",
-    "main.js": "/hairwithaview/static/js/main.75800d8a.js",
-    "static/media/hwav_pricelist.pdf": "/hairwithaview/static/media/hwav_pricelist.39fe4c2a19de3959420f.pdf",
-    "static/media/hwav_logo.png": "/hairwithaview/static/media/hwav_logo.88be0718ec4b7a31aee2.png",
-    "static/media/salon_4.jpg": "/hairwithaview/static/media/salon_4.a42bf8de024c84a1b925.jpg",
-    "static/media/salon_8.jpg": "/hairwithaview/static/media/salon_8.802461a3c76dafed907a.jpg",
-    "static/media/salon_6.jpg": "/hairwithaview/static/media/salon_6.84cea668fc516422dda2.jpg",
-    "static/media/salon_2.jpg": "/hairwithaview/static/media/salon_2.1d0f2c4d7e9443c4641b.jpg",
-    "static/media/salon_7.jpg": "/hairwithaview/static/media/salon_7.3ea79f95fcff801b9244.jpg",
-    "static/media/salon_5.jpg": "/hairwithaview/static/media/salon_5.e937c6c7bd5a47f9116c.jpg",
-    "static/media/salon_1.jpg": "/hairwithaview/static/media/salon_1.6de2946e1d48ae647041.jpg",
-    "static/media/salon_3.jpg": "/hairwithaview/static/media/salon_3.d98bd3b3fc994b17cc29.jpg",
-    "static/media/fenotype_-_sonderscript3.woff": "/hairwithaview/static/media/fenotype_-_sonderscript3.af0b299668670ff88d4e.woff",
-    "static/media/fenotype_-_sonderscript3.woff2": "/hairwithaview/static/media/fenotype_-_sonderscript3.73b4d96ae477cb59bf3e.woff2",
-    "static/media/Aileron-Thin-webfont.woff": "/hairwithaview/static/media/Aileron-Thin-webfont.72468cc8bfcc0ab65237.woff",
-    "index.html": "/hairwithaview/index.html",
-    "main.434ee9d3.css.map": "/hairwithaview/static/css/main.434ee9d3.css.map",
-    "main.75800d8a.js.map": "/hairwithaview/static/js/main.75800d8a.js.map"
+    "main.css": "/static/css/main.d650b1bc.css",
+    "main.js": "/static/js/main.7b2ff50c.js",
+    "static/media/hwav_pricelist.pdf": "/static/media/hwav_pricelist.39fe4c2a19de3959420f.pdf",
+    "static/media/hwav_logo.png": "/static/media/hwav_logo.88be0718ec4b7a31aee2.png",
+    "static/media/salon_4.jpg": "/static/media/salon_4.a42bf8de024c84a1b925.jpg",
+    "static/media/salon_8.jpg": "/static/media/salon_8.802461a3c76dafed907a.jpg",
+    "static/media/salon_6.jpg": "/static/media/salon_6.84cea668fc516422dda2.jpg",
+    "static/media/salon_2.jpg": "/static/media/salon_2.1d0f2c4d7e9443c4641b.jpg",
+    "static/media/salon_7.jpg": "/static/media/salon_7.3ea79f95fcff801b9244.jpg",
+    "static/media/salon_5.jpg": "/static/media/salon_5.e937c6c7bd5a47f9116c.jpg",
+    "static/media/salon_1.jpg": "/static/media/salon_1.6de2946e1d48ae647041.jpg",
+    "static/media/salon_3.jpg": "/static/media/salon_3.d98bd3b3fc994b17cc29.jpg",
+    "static/media/fenotype_-_sonderscript3.woff": "/static/media/fenotype_-_sonderscript3.af0b299668670ff88d4e.woff",
+    "static/media/fenotype_-_sonderscript3.woff2": "/static/media/fenotype_-_sonderscript3.73b4d96ae477cb59bf3e.woff2",
+    "static/media/Aileron-Thin-webfont.woff": "/static/media/Aileron-Thin-webfont.72468cc8bfcc0ab65237.woff",
+    "index.html": "/index.html",
+    "main.d650b1bc.css.map": "/static/css/main.d650b1bc.css.map",
+    "main.7b2ff50c.js.map": "/static/js/main.7b2ff50c.js.map"
   },
   "entrypoints": [
-    "static/css/main.434ee9d3.css",
-    "static/js/main.75800d8a.js"
+    "static/css/main.d650b1bc.css",
+    "static/js/main.7b2ff50c.js"
   ]
 }
