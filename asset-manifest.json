@@ -17,7 +17,8 @@
     "static/media/Aileron-Thin-webfont.woff": "/static/media/Aileron-Thin-webfont.72468cc8bfcc0ab65237.woff",
     "index.html": "/index.html",
     "main.faf72899.css.map": "/static/css/main.faf72899.css.map",
-    "main.9505fc20.js.map": "/static/js/main.9505fc20.js.map"
+    "main.9505fc20.js.map": "/static/js/main.9505fc20.js.map",
+    "registerServiceWorker.js": "/registerServiceWorker.js"
   },
   "entrypoints": [
     "static/css/main.faf72899.css",
