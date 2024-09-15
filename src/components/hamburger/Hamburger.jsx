@@ -5,7 +5,6 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons'
   
 import './Hamburger.css'
-import priceList from '../../assets/other/hwav_pricelist.pdf'
 
 export default class Hamburger extends Component {
   constructor(props) {
@@ -57,21 +56,13 @@ class Menu extends Component {
           <Link to='about' smooth={true} onClick={this.props.toggle}>About Us</Link>
         </div>
         <div className='buttonLabel mobile'>
+          <Link to='services' smooth={true} onClick={this.props.toggle}>Services</Link>
+        </div>
+        <div className='buttonLabel mobile'>
           <Link to='gallery' smooth={true} onClick={this.props.toggle}>Gallery</Link>
         </div>
         <div className='buttonLabel mobile'>
           <Link to='testimonials' smooth={true} onClick={this.props.toggle}>Testimonials</Link>
-        </div>
-        <div className='buttonLabel mobile'>
-          <a 
-            id='menuAnchor'
-            href={priceList}
-            target='_blank'
-            rel='noopener noreferrer'
-            onClick={this.props.toggle}
-          >
-            <span>Services</span>
-          </a>
         </div>
         <div className='buttonLabel mobile'>
           <Link to='contact' smooth={true} onClick={this.props.toggle}>Contact</Link>

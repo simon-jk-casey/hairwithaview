@@ -34,5 +34,9 @@
     .servicePrice {
         width: 10%;
     }
+
+    .makeItBigger {
+        font-size: 1.0em;
+    }
 }
 
