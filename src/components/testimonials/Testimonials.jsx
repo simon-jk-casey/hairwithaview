@@ -29,6 +29,18 @@ export default class Testimonials extends Component {
         {
           name: 'Emily',
           feedback: 'Eight years of fantastic cuts, colour and service.  Thanks Alana!'
+        },
+        {
+          name: "Melanie Quigg",
+          feedback: "I love going to Alana for my hair! I did my research when I moved to Wellington and thought I'd try a couple out, however I tried Hair with a view and loved it so much I never left! Alana is great at discussing what you want done with your hair, provides options and is always so lovely to talk to!"
+        },
+        {
+          name: "Natasha Beardsley",
+          feedback: "Highly recommend visiting Hair With A View. Alana has been my hairdresser for many years and does a beautiful job every time. She's been with me through the spectrum of colours (shout out to her expertise in blonde colouring!) as well as smoothing treatments, various cuts, fringes coming and going, and styling for events. Whatever my current goal for my hair, she lends her expert advice and helps me achieve it. I love catching up for a chat, and always leave her salon feeling pampered and like a new me."
+        },
+        {
+          name: "Alison Smith",
+          feedback: "Alana is amazing, listens, advises on styles, makes you more than comfortable. Her place is gorgeous, so personal, not like the big impersonal salons, you are treated like an individual, she gets excited with new cuts and colours but loves to make you feel so special whatever you are having done, massage chair to compliment the head massage. The longest I have stayed with a single hairdresser, she’s a gem xx"
         }
       ]
     }
@@ -52,7 +64,7 @@ export default class Testimonials extends Component {
 
   render () {
     return (
-      <div className='bodyComponent'>
+      <div className='testComponent'>
         <h2 className='testHeader'>Testimonials</h2>
         <div className='testimonialContainer'>
           <div className='testButtonContainerLeft'>
