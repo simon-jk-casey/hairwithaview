@@ -28,9 +28,9 @@
 }
 
 .testComponent {
-  height: auto;
+  /* height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
 }
 
 /* @media only screen and (max-width : 1024px) {
