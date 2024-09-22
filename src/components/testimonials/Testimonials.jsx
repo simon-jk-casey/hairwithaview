@@ -36,11 +36,11 @@ export default class Testimonials extends Component {
         },
         {
           name: "Natasha Beardsley",
-          feedback: "Highly recommend visiting Hair With A View. Alana has been my hairdresser for many years and does a beautiful job every time. She's been with me through the spectrum of colours (shout out to her expertise in blonde colouring!) as well as smoothing treatments, various cuts, fringes coming and going, and styling for events. Whatever my current goal for my hair, she lends her expert advice and helps me achieve it. I love catching up for a chat, and always leave her salon feeling pampered and like a new me."
+          feedback: "Highly recommend visiting Hair With A View. Alana has been my hairdresser for many years and does a beautiful job every time. I love catching up for a chat, and always leave her salon feeling pampered and like a new me."
         },
         {
           name: "Alison Smith",
-          feedback: "Alana is amazing, listens, advises on styles, makes you more than comfortable. Her place is gorgeous, so personal, not like the big impersonal salons, you are treated like an individual, she gets excited with new cuts and colours but loves to make you feel so special whatever you are having done, massage chair to compliment the head massage. The longest I have stayed with a single hairdresser, she’s a gem xx"
+          feedback: "Alana is amazing, listens, advises on styles, makes you more than comfortable. Her place is gorgeous, so personal, not like the big impersonal salons, you are treated like an individual. The longest I have stayed with a single hairdresser, she’s a gem xx"
         }
       ]
     }
