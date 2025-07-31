@@ -29,7 +29,7 @@ export default class MenuBar extends Component {
         </div>
         <div>
           <a
-            href='https://www.instagram.com/hair_by_alana1/'
+            href='https://www.instagram.com/hairwithaviewnz/'
             target='_blank'
             rel='noopener noreferrer'
           >
