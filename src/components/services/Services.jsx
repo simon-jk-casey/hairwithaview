@@ -29,12 +29,12 @@ const roots = [
     {
         id: 4,
         type: "Roots ~ Cut",
-        price: "$220"
+        price: "$235"
     },
     {
         id: 5,
         type: "Roots ~ No Cut",
-        price: "$140"
+        price: "$155"
     }
 ]
 
@@ -42,12 +42,12 @@ const through = [
     {
         id: 6,
         type: "Throughout ~ Cut",
-        price: "$245"
+        price: "$260"
     },
     {
         id: 7,
         type: "Throughout ~ No Cut",
-        price: "$165"
+        price: "$180"
     }
 ]
 
@@ -69,12 +69,12 @@ const ombre = [
     {
         id: 10,
         type: "Ombre/Balayage ~ Cut",
-        price: "$355"
+        price: "$375"
     },
     {
         id: 11,
         type: "Ombre/Balayage ~ No Cut",
-        price: "$305"
+        price: "$325"
     }
 ]
 
@@ -82,12 +82,12 @@ const fullHead = [
     {
         id: 12,
         type: "Full Head ~ Cut",
-        price: "$330"
+        price: "$345"
     },
     {
         id: 13,
         type: "Full Head ~ No Cut",
-        price: "$280"
+        price: "$295"
     }
 ]
 
@@ -95,12 +95,12 @@ const halfHead = [
     {
         id: 13,
         type: "Half Head ~ Cut",
-        price: "$280"
+        price: "$295"
     },
     {
         id: 14,
         type: "Half Head ~ No Cut",
-        price: "$230"
+        price: "$245"
     }
 ]
 
